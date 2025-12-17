@@ -21,20 +21,26 @@ This project is part of a **two-repository architecture**:
 - **Authentication & Protected Routes**
 - Login / Register
 - JWT-based session handling
-- **Dashboard Overview**
 - Today’s Chaos Score
 - Weekly Chaos Trend (charts)
 - Worst / Best / Average day statistics
-- **Snapshots Management (CRUD)**
 - Create daily snapshots
 - Edit snapshot (same day restriction enforced)
 - Delete snapshots with confirmation modal
-- **Business Rules**
-- Only **one snapshot per day per user**
-- Users can only access **their own data**
-- **User Feedback**
+
+## Dashboard Overview 
+- Today’s Chaos Score
+- Weekly Chaos Trend (charts)
+- Worst / Best / Average day statistics
+  
+## Business Rules
+- Only one snapshot per day per user
+- Users can only access their own data
+
+## User Feedback
 - Toast notifications for success / errors
-- **Clean UI**
+  
+## Clean UI 
 - Tailwind CSS v3
 - Responsive layout
 - Skeleton loaders
