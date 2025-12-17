@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* إعداد الخلفية العامة */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  @apply bg-slate-900 text-slate-100 antialiased;
+  background-image:
+    radial-gradient(1000px 800px at 20% -10%, rgba(56,189,248,0.15), transparent 60%),
+    radial-gradient(800px 600px at 120% 10%, rgba(99,102,241,0.12), transparent 60%),
+    linear-gradient(to bottom, rgba(2,6,23,0.7), rgba(2,6,23,1));
+  background-attachment: fixed;
+}
+
+a {
+  @apply text-sky-400 hover:text-sky-300;
+}
+
+.card {
+  @apply bg-slate-900/60 border border-slate-800 rounded-2xl shadow-lg backdrop-blur;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-lg transition;
+}
+
+h1, h2, h3 {
+  @apply tracking-tight;
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-xl px-4 py-2 text-sm font-semibold bg-sky-500 text-slate-950 hover:bg-sky-400 transition disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .kicker {
+    @apply text-xs uppercase tracking-wider text-slate-400;
+  }
+}
