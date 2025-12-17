@@ -127,31 +127,31 @@ Authorization: Bearer <token>
 ```
 Unauthorized users are redirected to /login
 
-Status :
+## Status 
 
-Core dashboard features implemented
+- Core dashboard features implemented
 
-CRUD snapshots logic complete
+- CRUD snapshots logic complete
 
-User isolation & business rules enforced
+- User isolation & business rules enforced
 
-Ongoing UI & data-visualization improvements
+- Ongoing UI & data-visualization improvements
 
-Planned Enhancements :
+## Planned Enhancements :
 
-Additional charts (distribution, comparisons)
+- Additional charts (distribution, comparisons)
 
-Snapshot creation modal UX improvements
+- Snapshot creation modal UX improvements
 
-Deployment (Vercel / Netlify)
+- Deployment (Vercel / Netlify)
 
-Full SaaS flow integration with backend roadmap
+- Full SaaS flow integration with backend roadmap
 
-License :
+## License :
 
 MIT License © Ali Romia
 
-Author :
+## Author :
 Ali Romia
 Software Engineer
 
