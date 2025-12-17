@@ -50,7 +50,7 @@ This project is part of a **two-repository architecture**:
 
 ---
 
-## 🧩 Architecture Overview : 
+## Architecture Overview : 
  ```bash
 Frontend (this repo)
 │
@@ -73,7 +73,7 @@ Backend API (separate repo)
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend**
 - React 18
@@ -95,7 +95,7 @@ Backend API (separate repo)
 
 ---
 
-## ⚙️ Local Setup
+## Local Setup
 
 ### 1️⃣ Clone the repository
 ```bash
