@@ -11,7 +11,9 @@ The dashboard consumes a production-grade backend API to help users track daily 
 https://github.com/Aliromia21/digital-chaos-index
 
 This project is part of a **two-repository architecture**:
+
 - **Backend:** Node.js / Express API (JWT, MongoDB, Swagger, Tests, CI)
+  
 - **Frontend:** React Dashboard (Tailwind CSS, Charts, Protected Routes)
 
 ---
@@ -152,8 +154,8 @@ Unauthorized users are redirected to /login
 MIT License © Ali Romia
 
 ## Author :
-Ali Romia
-Software Engineer
+
+Ali Romia - Software Engineer
 
 GitHub: https://github.com/Aliromia21
 
