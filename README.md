@@ -21,10 +21,10 @@ This project is part of a **two-repository architecture**:
 ## Screenshots
 
 ### Main Dashboard
-![Main Dashboard](screenshots/dashboard.png)
+![Main Dashboard](screenshots/Dashboard.png)
 
-### Chaos Breakdown Chart
-![Breakdown Chart](screenshots/login.png)
+### Login Page
+![Login Page](screenshots/Login.png)
 
 
 ## Features
