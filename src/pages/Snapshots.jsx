@@ -30,7 +30,7 @@ export default function Snapshots() {
     }
   }, [query]);
 
-  // ✅ صفّر البيانات وأعد ضبط الصفحة عند تبدّل المستخدم
+   //Reset data and page state when the user changes
   useEffect(() => {
     setItems([]);
     setErr("");
@@ -38,7 +38,7 @@ export default function Snapshots() {
     setLoading(true);
   }, [user]);
 
-  // ✅ اجلب البيانات فقط عندما يوجد user
+  // Fetch data only when user exists
   useEffect(() => {
     if (!user) return;
     load();

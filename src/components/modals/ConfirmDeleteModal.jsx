@@ -1,4 +1,3 @@
-// src/components/modals/ConfirmDeleteModal.jsx
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import api from "../../api/client";

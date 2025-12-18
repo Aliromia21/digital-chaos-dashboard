@@ -27,7 +27,7 @@ export default function Login() {
       await login(email, password);
       toast.success("Welcome back");
 
-      // إذا تم تحويلك بسبب 401 أو من ProtectedRoute
+     // If redirected due to 401 or from ProtectedRoute
       const from = new URLSearchParams(loc.search).get("from");
       nav(from || "/", { replace: true });
     } catch (err) {

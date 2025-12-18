@@ -21,7 +21,6 @@ export function AuthProvider({ children }) {
   const login = async (email, password) => {
     const res = await api.post("/auth/login", { email, password });
 
-    // ✅ حسب ردّ الـ API لديك
     const token = res.data?.token;
     const u = res.data?.data;
 
@@ -39,7 +38,7 @@ export function AuthProvider({ children }) {
   const register = async (name, email, password) => {
     const res = await api.post("/auth/register", { name, email, password });
 
-    // ✅ حسب ردّ الـ API لديك
+
     const token = res.data?.token;
     const u = res.data?.data;
 
@@ -59,7 +58,7 @@ export function AuthProvider({ children }) {
     localStorage.removeItem("user");
     setUser(null);
 
-    // إعادة توجيه نظيفة (تقتل أي state قديم)
+// Hard redirect to eliminate any lingering state
     window.location.href = "/login";
   };
 

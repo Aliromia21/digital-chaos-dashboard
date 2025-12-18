@@ -54,7 +54,7 @@ export default function AddSnapshotModal({ open, onClose, onCreated }) {
       setSubmitting(true);
 
       const payload = {
-        // date اختياري: إذا فارغ لا نرسله
+        
         ...(form.date ? { date: new Date(form.date).toISOString() } : {}),
         ...FIELDS.reduce((acc, f) => {
           acc[f.key] = toNonNegativeInt(form[f.key]);
