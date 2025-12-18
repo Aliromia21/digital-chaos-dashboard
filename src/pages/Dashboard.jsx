@@ -26,7 +26,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 
-// Color based on the chaos level
+// Color based on chaos level
 const scoreColor = (s) => {
   const n = Number(s) || 0;
   if (n >= 75) return "#fb7185"; // rose
