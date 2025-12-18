@@ -26,7 +26,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 
-// لون يعتمد على مستوى الفوضى
+// Color based on the chaos level
 const scoreColor = (s) => {
   const n = Number(s) || 0;
   if (n >= 75) return "#fb7185"; // rose
@@ -34,16 +34,16 @@ const scoreColor = (s) => {
   return "#34d399"; // emerald
 };
 
-// لتجميل Label الأيام (سواء dayKey أو ISO)
+// Format day labels (whether dayKey or ISO)
 function niceDayLabel(v) {
   const d = new Date(v);
   if (Number.isNaN(d.getTime())) return String(v);
   return d.toLocaleDateString(undefined, { month: "short", day: "2-digit" });
 }
 
-// Normalize سريع لقيم breakdown (قابلة للتعديل لاحقًا)
+// Quick normalization for breakdown values 
 function normalizeBreakdown(today) {
-  // حدود “تقديرية” للعرض فقط (لإعطاء radar شكل منطقي)
+// Approximate limits for display only (to give the radar a logical shape)
   const MAX = {
     browserTabs: 60,
     unusedBookmarks: 40,
@@ -121,7 +121,7 @@ export default function Dashboard() {
   }, [week]);
 
   const worstBars = useMemo(() => {
-    // ملاحظة: هذا من آخر 7 أيام (مصدره /week)
+// Note: data covers the last 7 days (source: /week)
     return (week || [])
       .slice()
       .sort((a, b) => (b.chaosScore ?? 0) - (a.chaosScore ?? 0))
@@ -272,7 +272,7 @@ export default function Dashboard() {
                 <PolarAngleAxis dataKey="metric" tick={{ fill: "#94a3b8", fontSize: 12 }} />
                 <Tooltip
                   formatter={(value, name, props) => {
-                    // نعرض النسبة + القيمة الحقيقية
+                   // Display percentage along with the actual value
                     const raw = props?.payload?.raw ?? 0;
                     return [`${value}% (raw: ${raw})`, "impact"];
                   }}
