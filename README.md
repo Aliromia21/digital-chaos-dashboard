@@ -18,6 +18,15 @@ This project is part of a **two-repository architecture**:
 
 ---
 
+## Screenshots
+
+### Main Dashboard
+![Main Dashboard](screenshots/dashboard.png)
+
+### Chaos Breakdown Chart
+![Breakdown Chart](screenshots/login.png)
+
+
 ## Features
 
 - **Authentication & Protected Routes**
