@@ -1,6 +1,5 @@
 # Digital Chaos Index — Dashboard
-![CI](https://github.com/Aliromia21/digital-chaos-dashboard/actions/workflows/ci.yml/badge.svg)
-![Coverage](https://codecov.io/gh/Aliromia21/digital-chaos-dashboard/branch/main/graph/badge.svg)
+
 
 
 
