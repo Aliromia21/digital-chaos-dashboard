@@ -18,3 +18,11 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# coverage reports
+coverage/
+lcov-report/
+
+# IDE files
+.idea/
+*.iml
