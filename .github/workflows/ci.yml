@@ -11,22 +11,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
-      - name: Install
+      - name: Install dependencies
         run: npm ci
 
-      - name: Unit/Smoke Tests
+      - name: Run unit and smoke tests
         run: npm run test:run
 
-      - name: Coverage
+      - name: Generate coverage
         run: npm run test:cov
 
       - name: Upload coverage artifact
@@ -34,12 +34,12 @@ jobs:
         with:
           name: coverage-report
           path: coverage
-          
+
       - name: Upload coverage to Codecov
-    uses: codecov/codecov-action@v5
-    with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        files: ./coverage/lcov.info
-        flags: frontend
-        name: chaos-dashboard
-        fail_ci_if_error: false
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage/lcov.info
+          flags: frontend
+          name: chaos-dashboard
+          fail_ci_if_error: false
