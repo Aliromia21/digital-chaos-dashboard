@@ -30,6 +30,10 @@ This project is part of a **two-repository architecture**:
 ### Login Page
 ![Login Page](screenshots/Login.png)
 
+### Form Page
+![Form Page](screenshots/form.png)
+
+
 
 ## Features
 
